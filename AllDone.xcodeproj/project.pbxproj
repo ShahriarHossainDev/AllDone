@@ -20,6 +20,7 @@
 		FADEDD5429157470000878E4 /* CustomSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5329157470000878E4 /* CustomSecureTextField.swift */; };
 		FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */; };
 		FADEDD5829158F22000878E4 /* AuthenticateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5729158F22000878E4 /* AuthenticateButton.swift */; };
+		FADEDD5A29159473000878E4 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5929159473000878E4 /* UserTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FADEDD5329157470000878E4 /* CustomSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureTextField.swift; sourceTree = "<group>"; };
 		FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecureField.swift; sourceTree = "<group>"; };
 		FADEDD5729158F22000878E4 /* AuthenticateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateButton.swift; sourceTree = "<group>"; };
+		FADEDD5929159473000878E4 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				FADEDD51291572C3000878E4 /* EmailTextField.swift */,
 				FADEDD5329157470000878E4 /* CustomSecureTextField.swift */,
 				FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */,
+				FADEDD5929159473000878E4 /* UserTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				FADEDD52291572C3000878E4 /* EmailTextField.swift in Sources */,
 				FADEDD5429157470000878E4 /* CustomSecureTextField.swift in Sources */,
+				FADEDD5A29159473000878E4 /* UserTextField.swift in Sources */,
 				FADEDD4F29157048000878E4 /* CustomTextField.swift in Sources */,
 				FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */,
 				FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */,
