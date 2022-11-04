@@ -15,6 +15,10 @@
 		FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B39D291564F100D8FC1C /* SignupView.swift */; };
 		FA99B3A229156C5700D8FC1C /* BackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B3A129156C5700D8FC1C /* BackgroundGradientView.swift */; };
 		FA99B3A429156E1D00D8FC1C /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B3A329156E1D00D8FC1C /* LogoView.swift */; };
+		FADEDD4F29157048000878E4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD4E29157048000878E4 /* CustomTextField.swift */; };
+		FADEDD52291572C3000878E4 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD51291572C3000878E4 /* EmailTextField.swift */; };
+		FADEDD5429157470000878E4 /* CustomSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5329157470000878E4 /* CustomSecureTextField.swift */; };
+		FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		FA99B39D291564F100D8FC1C /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		FA99B3A129156C5700D8FC1C /* BackgroundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradientView.swift; sourceTree = "<group>"; };
 		FA99B3A329156E1D00D8FC1C /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		FADEDD4E29157048000878E4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FADEDD51291572C3000878E4 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		FADEDD5329157470000878E4 /* CustomSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureTextField.swift; sourceTree = "<group>"; };
+		FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		FA99B39F291564F500D8FC1C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FADEDD50291572AB000878E4 /* TextFields */,
 				FA99B3A129156C5700D8FC1C /* BackgroundGradientView.swift */,
 				FA99B3A329156E1D00D8FC1C /* LogoView.swift */,
 			);
@@ -117,6 +126,17 @@
 			children = (
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FADEDD50291572AB000878E4 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				FADEDD4E29157048000878E4 /* CustomTextField.swift */,
+				FADEDD51291572C3000878E4 /* EmailTextField.swift */,
+				FADEDD5329157470000878E4 /* CustomSecureTextField.swift */,
+				FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADEDD52291572C3000878E4 /* EmailTextField.swift in Sources */,
+				FADEDD5429157470000878E4 /* CustomSecureTextField.swift in Sources */,
+				FADEDD4F29157048000878E4 /* CustomTextField.swift in Sources */,
 				FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */,
+				FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */,
 				FA99B3A429156E1D00D8FC1C /* LogoView.swift in Sources */,
 				FA99B39C291564DB00D8FC1C /* LoginView.swift in Sources */,
 				FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */,

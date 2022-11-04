@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
         ZStack {
             BackgroundGradientView()
             
             VStack {
                 LogoView()
+                    .padding(.bottom, 25)
+                
+                VStack(spacing: 20) {
+                    EmailTextField(text: $email)
+                    
+                    PasswordSecureField(text: $password, placeholder: "Password")
+                } // VStack
+                .padding(.horizontal, 32)
             } // VStack
         } // ZStack
     }
