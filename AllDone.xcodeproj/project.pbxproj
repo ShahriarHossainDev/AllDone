@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA191F73291C163100F9093D /* TODOViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F72291C163100F9093D /* TODOViewModel.swift */; };
 		FA99B38B29152F1500D8FC1C /* AllDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */; };
 		FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38C29152F1500D8FC1C /* ContentView.swift */; };
 		FA99B38F29152F1600D8FC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA99B38E29152F1600D8FC1C /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA191F72291C163100F9093D /* TODOViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOViewModel.swift; sourceTree = "<group>"; };
 		FA99B38729152F1500D8FC1C /* AllDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoneApp.swift; sourceTree = "<group>"; };
 		FA99B38C29152F1500D8FC1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +110,6 @@
 				FADEDD6229183216000878E4 /* Utils */,
 				FA99B399291563D700D8FC1C /* Model */,
 				FA99B398291563CF00D8FC1C /* View */,
-				FA99B39A291563E000D8FC1C /* ViewModel */,
 				FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */,
 				FA99B38C29152F1500D8FC1C /* ContentView.swift */,
 				FA99B38E29152F1600D8FC1C /* Assets.xcassets */,
@@ -128,11 +129,10 @@
 		FA99B398291563CF00D8FC1C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA99B3A02915650C00D8FC1C /* Authentication */,
-				FA99B39F291564F500D8FC1C /* Utils */,
-				FA99B39B291564DB00D8FC1C /* LoginView.swift */,
-				FA99B39D291564F100D8FC1C /* SignupView.swift */,
 				FADEDD7E291998B2000878E4 /* DashboardView.swift */,
+				FA99B39F291564F500D8FC1C /* Utils */,
+				FA99B3A02915650C00D8FC1C /* Authentication */,
+				FA99B39A291563E000D8FC1C /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FADEDD7C29199329000878E4 /* AuthViewModel.swift */,
+				FA191F72291C163100F9093D /* TODOViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +171,8 @@
 		FA99B3A02915650C00D8FC1C /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				FA99B39D291564F100D8FC1C /* SignupView.swift */,
+				FA99B39B291564DB00D8FC1C /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				FADEDD6429183243000878E4 /* Constants.swift in Sources */,
 				FADEDD5829158F22000878E4 /* AuthenticateButton.swift in Sources */,
 				FA99B39C291564DB00D8FC1C /* LoginView.swift in Sources */,
+				FA191F73291C163100F9093D /* TODOViewModel.swift in Sources */,
 				FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */,
 				FA99B3A229156C5700D8FC1C /* BackgroundGradientView.swift in Sources */,
 				FA99B38B29152F1500D8FC1C /* AllDoneApp.swift in Sources */,
