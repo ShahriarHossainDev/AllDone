@@ -35,6 +35,8 @@
 		FADEDD77291834BB000878E4 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD76291834BB000878E4 /* TODO.swift */; };
 		FADEDD79291835D0000878E4 /* SelectedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD78291835D0000878E4 /* SelectedButton.swift */; };
 		FADEDD7B291991B5000878E4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD7A291991B4000878E4 /* MockData.swift */; };
+		FADEDD7D29199329000878E4 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD7C29199329000878E4 /* AuthViewModel.swift */; };
+		FADEDD7F291998B2000878E4 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDD7E291998B2000878E4 /* DashboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		FADEDD76291834BB000878E4 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		FADEDD78291835D0000878E4 /* SelectedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedButton.swift; sourceTree = "<group>"; };
 		FADEDD7A291991B4000878E4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		FADEDD7C29199329000878E4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		FADEDD7E291998B2000878E4 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				FA99B39F291564F500D8FC1C /* Utils */,
 				FA99B39B291564DB00D8FC1C /* LoginView.swift */,
 				FA99B39D291564F100D8FC1C /* SignupView.swift */,
+				FADEDD7E291998B2000878E4 /* DashboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		FA99B39A291563E000D8FC1C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FADEDD7C29199329000878E4 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 				FADEDD79291835D0000878E4 /* SelectedButton.swift in Sources */,
 				FADEDD4F29157048000878E4 /* CustomTextField.swift in Sources */,
 				FADEDD77291834BB000878E4 /* TODO.swift in Sources */,
+				FADEDD7F291998B2000878E4 /* DashboardView.swift in Sources */,
+				FADEDD7D29199329000878E4 /* AuthViewModel.swift in Sources */,
 				FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */,
 				FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */,
 				FA99B3A429156E1D00D8FC1C /* LogoView.swift in Sources */,
