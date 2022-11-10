@@ -29,7 +29,7 @@ struct DashboardView: View {
                         AuthViewModel.shared.signOut()
                     } label: {
                         Text("Log Out")
-                            .foregroundColor(Color(.gray))
+                            .foregroundColor(Color(.systemGray))
                     }
                     .padding(.trailing)
                 } //HStack
@@ -37,6 +37,15 @@ struct DashboardView: View {
             
             SearchBarView(searchText: $searchText)
                 .padding()
+            
+            TODOButtonStack(viewModel: viewModel)
+                .padding(.horizontal)
+                .padding(.bottom)
+            
+            if viewModel.todosFiltered.isEmpty {
+                AddTODOLogo()
+                    .padding(.top)
+            }
             
         } // VStack
     }

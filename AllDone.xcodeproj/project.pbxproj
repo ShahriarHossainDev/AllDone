@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA191F73291C163100F9093D /* TODOViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F72291C163100F9093D /* TODOViewModel.swift */; };
 		FA191F75291C6EFF00F9093D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F74291C6EFF00F9093D /* SearchBarView.swift */; };
+		FA191F77291C767800F9093D /* TODOButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F76291C767800F9093D /* TODOButtonStack.swift */; };
+		FA191F79291C7AEA00F9093D /* AddTODOLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */; };
 		FA99B38B29152F1500D8FC1C /* AllDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */; };
 		FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38C29152F1500D8FC1C /* ContentView.swift */; };
 		FA99B38F29152F1600D8FC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA99B38E29152F1600D8FC1C /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		FA191F72291C163100F9093D /* TODOViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOViewModel.swift; sourceTree = "<group>"; };
 		FA191F74291C6EFF00F9093D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		FA191F76291C767800F9093D /* TODOButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOButtonStack.swift; sourceTree = "<group>"; };
+		FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTODOLogo.swift; sourceTree = "<group>"; };
 		FA99B38729152F1500D8FC1C /* AllDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoneApp.swift; sourceTree = "<group>"; };
 		FA99B38C29152F1500D8FC1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				FA99B3A329156E1D00D8FC1C /* LogoView.swift */,
 				FADEDD5729158F22000878E4 /* AuthenticateButton.swift */,
 				FA191F74291C6EFF00F9093D /* SearchBarView.swift */,
+				FA191F76291C767800F9093D /* TODOButtonStack.swift */,
+				FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				FADEDD77291834BB000878E4 /* TODO.swift in Sources */,
 				FADEDD7F291998B2000878E4 /* DashboardView.swift in Sources */,
 				FADEDD7D29199329000878E4 /* AuthViewModel.swift in Sources */,
+				FA191F77291C767800F9093D /* TODOButtonStack.swift in Sources */,
 				FA191F75291C6EFF00F9093D /* SearchBarView.swift in Sources */,
 				FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */,
 				FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */,
@@ -312,6 +319,7 @@
 				FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */,
 				FA99B3A229156C5700D8FC1C /* BackgroundGradientView.swift in Sources */,
 				FA99B38B29152F1500D8FC1C /* AllDoneApp.swift in Sources */,
+				FA191F79291C7AEA00F9093D /* AddTODOLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
