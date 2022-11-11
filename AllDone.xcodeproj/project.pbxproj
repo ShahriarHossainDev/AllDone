@@ -11,6 +11,11 @@
 		FA191F75291C6EFF00F9093D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F74291C6EFF00F9093D /* SearchBarView.swift */; };
 		FA191F77291C767800F9093D /* TODOButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F76291C767800F9093D /* TODOButtonStack.swift */; };
 		FA191F79291C7AEA00F9093D /* AddTODOLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */; };
+		FA191F7B291C7D4800F9093D /* TODOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F7A291C7D4800F9093D /* TODOView.swift */; };
+		FA191F7D291C81F100F9093D /* BlackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191F7C291C81F100F9093D /* BlackView.swift */; };
+		FA653861291E8F680049028D /* CreateTODOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA653860291E8F680049028D /* CreateTODOView.swift */; };
+		FA653863291EC9D70049028D /* TODOTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA653862291EC9D70049028D /* TODOTextField.swift */; };
+		FA653865291ECB6C0049028D /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA653864291ECB6C0049028D /* CustomTextEditor.swift */; };
 		FA99B38B29152F1500D8FC1C /* AllDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */; };
 		FA99B38D29152F1500D8FC1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99B38C29152F1500D8FC1C /* ContentView.swift */; };
 		FA99B38F29152F1600D8FC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA99B38E29152F1600D8FC1C /* Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		FA191F74291C6EFF00F9093D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		FA191F76291C767800F9093D /* TODOButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOButtonStack.swift; sourceTree = "<group>"; };
 		FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTODOLogo.swift; sourceTree = "<group>"; };
+		FA191F7A291C7D4800F9093D /* TODOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOView.swift; sourceTree = "<group>"; };
+		FA191F7C291C81F100F9093D /* BlackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackView.swift; sourceTree = "<group>"; };
+		FA653860291E8F680049028D /* CreateTODOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTODOView.swift; sourceTree = "<group>"; };
+		FA653862291EC9D70049028D /* TODOTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOTextField.swift; sourceTree = "<group>"; };
+		FA653864291ECB6C0049028D /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
 		FA99B38729152F1500D8FC1C /* AllDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA99B38A29152F1500D8FC1C /* AllDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoneApp.swift; sourceTree = "<group>"; };
 		FA99B38C29152F1500D8FC1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				FADEDD7E291998B2000878E4 /* DashboardView.swift */,
+				FA191F7A291C7D4800F9093D /* TODOView.swift */,
+				FA653860291E8F680049028D /* CreateTODOView.swift */,
 				FA99B39F291564F500D8FC1C /* Utils */,
 				FA99B3A02915650C00D8FC1C /* Authentication */,
 				FA99B39A291563E000D8FC1C /* ViewModel */,
@@ -173,6 +185,7 @@
 				FA191F74291C6EFF00F9093D /* SearchBarView.swift */,
 				FA191F76291C767800F9093D /* TODOButtonStack.swift */,
 				FA191F78291C7AEA00F9093D /* AddTODOLogo.swift */,
+				FA191F7C291C81F100F9093D /* BlackView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,11 +202,13 @@
 		FADEDD50291572AB000878E4 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				FA653862291EC9D70049028D /* TODOTextField.swift */,
 				FADEDD4E29157048000878E4 /* CustomTextField.swift */,
 				FADEDD51291572C3000878E4 /* EmailTextField.swift */,
 				FADEDD5329157470000878E4 /* CustomSecureTextField.swift */,
 				FADEDD5529157B1B000878E4 /* PasswordSecureField.swift */,
 				FADEDD5929159473000878E4 /* UserTextField.swift */,
+				FA653864291ECB6C0049028D /* CustomTextEditor.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -299,16 +314,21 @@
 			files = (
 				FADEDD75291833FD000878E4 /* AppUser.swift in Sources */,
 				FADEDD52291572C3000878E4 /* EmailTextField.swift in Sources */,
+				FA653861291E8F680049028D /* CreateTODOView.swift in Sources */,
+				FA191F7B291C7D4800F9093D /* TODOView.swift in Sources */,
 				FADEDD5429157470000878E4 /* CustomSecureTextField.swift in Sources */,
+				FA191F7D291C81F100F9093D /* BlackView.swift in Sources */,
 				FADEDD7B291991B5000878E4 /* MockData.swift in Sources */,
 				FADEDD5A29159473000878E4 /* UserTextField.swift in Sources */,
 				FADEDD79291835D0000878E4 /* SelectedButton.swift in Sources */,
 				FADEDD4F29157048000878E4 /* CustomTextField.swift in Sources */,
 				FADEDD77291834BB000878E4 /* TODO.swift in Sources */,
+				FA653863291EC9D70049028D /* TODOTextField.swift in Sources */,
 				FADEDD7F291998B2000878E4 /* DashboardView.swift in Sources */,
 				FADEDD7D29199329000878E4 /* AuthViewModel.swift in Sources */,
 				FA191F77291C767800F9093D /* TODOButtonStack.swift in Sources */,
 				FA191F75291C6EFF00F9093D /* SearchBarView.swift in Sources */,
+				FA653865291ECB6C0049028D /* CustomTextEditor.swift in Sources */,
 				FA99B39E291564F100D8FC1C /* SignupView.swift in Sources */,
 				FADEDD5629157B1B000878E4 /* PasswordSecureField.swift in Sources */,
 				FA99B3A429156E1D00D8FC1C /* LogoView.swift in Sources */,

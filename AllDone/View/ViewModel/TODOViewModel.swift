@@ -73,6 +73,18 @@ class TODOViewModel: ObservableObject {
         }
     }
     
+    func completeTODO(todoID: String) {
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        
+        COLLECTION_USERS.document(uid).collection("to-dos").document(todoID).updateData(["completed" : true]) { error in
+            if let error = error {
+                print("DEBUG: \(error.localizedDescription)")
+                return
+            }
+            self.loadTODOs()
+        }
+    }
+    
     func unCompleteTODO(todoID: String) {
         guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         
