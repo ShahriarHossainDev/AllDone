@@ -14,40 +14,82 @@ struct DashboardView: View {
     @ObservedObject var viewModel = TODOViewModel()
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Text("- All Done -")
-                    .font(.system(size: 24))
-                    .fontWeight(.semibold)
-                Spacer()
-            } // HStack
-            .overlay {
+        ZStack {
+            VStack {
                 HStack {
                     Spacer()
-                    Button {
-                        AuthViewModel.shared.signOut()
-                    } label: {
-                        Text("Log Out")
-                            .foregroundColor(Color(.systemGray))
-                    }
-                    .padding(.trailing)
-                } //HStack
-            } // overlay
+                    Text("- All Done -")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                    Spacer()
+                } // HStack
+                .overlay {
+                    HStack {
+                        Spacer()
+                        Button {
+                            AuthViewModel.shared.signOut()
+                        } label: {
+                            Text("Log Out")
+                                .foregroundColor(Color(.systemGray))
+                        }
+                        .padding(.trailing)
+                    } //HStack
+                } // overlay
+                
+                SearchBarView(searchText: $searchText)
+                    .padding()
+                
+                TODOButtonStack(viewModel: viewModel)
+                    .padding(.horizontal)
+                    .padding(.bottom)
+                
+                if viewModel.todosFiltered.isEmpty {
+                    AddTODOLogo()
+                        .padding(.top)
+                }
+                
+                ScrollView {
+                    VStack {
+                        ForEach(viewModel.todosFiltered, id: \.id) { todo in
+                            if searchText == "" {
+                                TODOView(todo: TODO(ownerUid: todo.ownerUid, title: todo.title, description: todo.description, TODOType: todo.TODOType, completed: todo.completed, documentID: todo.documentID), viewModel: viewModel)
+                            } else {
+                                if todo.title.lowercased().contains(searchText.lowercased()) || todo.description.lowercased().contains(searchText.lowercased()) {
+                                    TODOView(todo: TODO(ownerUid: todo.ownerUid, title: todo.title, description: todo.description, TODOType: todo.TODOType, completed: todo.completed, documentID: todo.documentID), viewModel: viewModel)
+                                }
+                            }
+                        } // ForEach
+                    } // VStack
+                } // ScrollView
+            }// VStack
+            .overlay {
+                VStack {
+                    Spacer()
+                    HStack{
+                        Spacer()
+                        Button {
+                            viewModel.showCreateTODOView = true
+                        } label: {
+                            Image(systemName: "plus")
+                                .padding()
+                                .foregroundColor(.white)
+                                .font(.system(size: 30))
+                                .frame(width: 60, height: 60)
+                                .background(Color("lightBlue"))
+                                .cornerRadius(30)
+                        }
+                        .padding(20)
+
+                    } // HStack
+                } // VStack
+            } //overlay
             
-            SearchBarView(searchText: $searchText)
-                .padding()
-            
-            TODOButtonStack(viewModel: viewModel)
-                .padding(.horizontal)
-                .padding(.bottom)
-            
-            if viewModel.todosFiltered.isEmpty {
-                AddTODOLogo()
-                    .padding(.top)
+            if viewModel.showCreateTODOView {
+                BlackView()
+                CreateTODOView(user: user, viewModel: viewModel)
             }
             
-        } // VStack
+        } // ZStack
     }
 }
 
